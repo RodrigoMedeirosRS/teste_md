@@ -1,13 +1,11 @@
-/**
- * Hello World Example
- * Created With Genesis-Code extension for Visual Studio Code
- * Use "Genesis Code: Compile" command to compile this program.
- **/
-#include <genesis.h>
+#include "DTO/Vec2.h"
+#include "BLL/TextoBLL.h"
 
 int main()
 {
-    VDP_drawText("Hello Sega!!", 10,13);
+    Vec2 posicao = Vec2_New(10, 13);
+    TextoBLL texto = TextoBLL_New("Jheniffer, eu te amo S2", &posicao);
+    TextoBLL_Escreve(&texto);
     while(1)
     {
         //For versions prior to SGDK 1.60 use VDP_waitVSync instead.
@@ -15,3 +13,5 @@ int main()
     }
     return (0);
 }
+
+
