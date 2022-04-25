@@ -1,12 +1,14 @@
 #pragma once
 
+#include <genesis.h>
+
 typedef struct Vec2
 {
-  int X;
-  int Y;
+  u16 X;
+  u16 Y;
 } Vec2;
 
-static Vec2 Vec2_New(int x, int y) 
+Vec2 Vec2_New(u16 x, u16 y) 
 {
 	return (struct Vec2){.X=x, .Y=y};
 }
