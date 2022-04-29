@@ -1,9 +1,9 @@
 {
 
-    //"C_Cpp.default.includePath": ["${env:GENDEV}/sgdk/inc",
-    //"${env:GENDEV}/sgdk/res",
-    "C_Cpp.default.includePath": ["C:/sgdk/inc",
-    "C:/sgdk/res",
+    "C_Cpp.default.includePath": ["${env:GENDEV}/sgdk/inc",
+    "${env:GENDEV}/sgdk/res",
+    //"C_Cpp.default.includePath": ["C:/sgdk/inc",
+    //"C:/sgdk/res",
     "res",
     "inc"
 ],
